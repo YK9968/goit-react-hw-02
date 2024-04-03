@@ -17,6 +17,9 @@ export default function Feedback({
         <p className={css.feedBackText}>Bad: {bad}</p>
       </li>
       <li>
+        <p className={css.feedBackText}>Total: {totalValue}</p>
+      </li>
+      <li>
         <p className={css.feedBackText}>Positive: {positivePercentage}%</p>
       </li>
     </ul>
