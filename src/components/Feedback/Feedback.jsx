@@ -3,8 +3,8 @@ import css from "./Feedback.module.css";
 export default function Feedback({
   value: { good, bad, neutral },
   totalValue,
+  percentageCalculation,
 }) {
-  const positivePercentage = Math.round((good / totalValue) * 100);
   return (
     <ul className={css.feedBackList}>
       <li>
@@ -20,7 +20,7 @@ export default function Feedback({
         <p className={css.feedBackText}>Total: {totalValue}</p>
       </li>
       <li>
-        <p className={css.feedBackText}>Positive: {positivePercentage}%</p>
+        <p className={css.feedBackText}>Positive: {percentageCalculation}%</p>
       </li>
     </ul>
   );
